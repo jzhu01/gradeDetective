@@ -1,0 +1,20 @@
+DynamoDB for Dummies
+Storing Data in Cloud
+
+- Cloud: computing grid
+  - Benefits: pay as you go, no costly upkeep, can scale up or down
+- Types: IaaS, PaaS, SaaS
+- DynamoDB:
+  - NoSQL (key-val mappings)
+  - High perf
+  - Affordable (pay as you go)
+  - scalable
+- Demo:
+  - read write capacity units - can change
+    - deals with how fast people can access
+  - stored as JSON
+  - only primary key matters
+  - name = keys, rest of values are just values
+  - access credentials file in aws
+  - secret key to access account
+  
