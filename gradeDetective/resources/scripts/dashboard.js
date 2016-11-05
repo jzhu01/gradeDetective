@@ -1,7 +1,6 @@
-//$(document).ready(function(){
-//    $("#submit").onclick(function(){
-window.onload = function(){
-  document.getElementById("submit").onclick = function(){
+$(document).ready(function(){
+  var myEl = document.getElementById('submitButton');
+  myEl.addEventListener('click', function() {
         var currCourse = $("#course").val();
         var currAssignment = $("#assignment").val();
 
@@ -11,9 +10,10 @@ window.onload = function(){
         var grade1 = points1/pointsOutOf1;
         console.log(currCourse + " " + currAssignment + " " + grade1);
 
-        //writeUserData(currCourse, currAssignment, grade1); 
-    }
-}
+        //writeUserData(currCourse, currAssignment, grade1);
+    });
+});
+
 
 
 function writeUserData(currCourse, currAssignment, grade1) {
