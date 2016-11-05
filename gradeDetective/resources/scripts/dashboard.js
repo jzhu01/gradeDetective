@@ -1,8 +1,23 @@
-var main = function(){
-  var points1 = $("#points1").val();
-  var pointsOutOf1 = $("#pointsOutOf1").val();
-  var points2 = $("#points2").val();
-  var pointsOutOf2 = $("#pointsOutOf2").val();
+$(document).ready(function(){
+    $("#submit").click(function(){
+        var currCourse = $("#course").val();
+        var currAssignment = $("#assignment").val();
 
-  var grade1 = 
+        var points1 = $("#points1").val();
+        var pointsOutOf1 = $("#pointsOutOf1").val();
+
+        var grade1 = points1/pointsOutOf1;
+        console.log(currCourse + " " + currAssignment + " " + grade1);
+
+        writeUserData(currCourse, currAssignment, grade1);
+    });
+});
+
+
+function writeUserData(currCourse, currAssignment, grade1) {
+//     firebase.database().ref().set({
+//     Course: currCourse,
+//     AssignmentType: currAssignment,
+//     Grade: grade1
+//   });
 }
