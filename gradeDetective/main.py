@@ -42,5 +42,5 @@ class UserProfileHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', DashboardHandler),
-    ('/userProfile', ProfileHandler)
+    ('/userProfile', UserProfileHandler)
 ], debug=True)
