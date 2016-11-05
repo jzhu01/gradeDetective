@@ -46,11 +46,20 @@
    </nav>
 
    <div id="content">
-     
-
-   <input type="submit" value="Submit" />
-   <input type="reset" value="Reset" />
-   <input type="submit" value="Add Options" />
+     <form>
+      <div class="form-group col-md-6">
+        <label for="grade1">Points</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter points earned">
+        <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+      </div>
+      <div class="form-group col-md-6">
+        <label for="grade1outof">Points out of: </label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Total points available">
+      </div>
+      <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-plus"></i></button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+    </div>
    </div>
    <div id="footer"></div>
 </body>
