@@ -39,3 +39,14 @@ a {color: #2b2bf6;
   border-radius: 25px;
   display: block;
 }
+fieldset {
+  display: inline;
+}
+
+.courseSelect, .btn-circle, .gradeOption{
+  display: block;
+}
+
+/*.gradeOption.form-check {
+  display: inline;
+}*/

@@ -47,6 +47,42 @@
 
    <div id="content">
      <form>
+       <div class="form-group col-md-11 courseSelect">
+        <label for="courseSelect">Select a Course</label>
+        <select class="form-control" id="course">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="gradeOption">
+        <fieldset class="form-group">
+          <legend>Choose an Option to Enter Grades:</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Points
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+              Letter Grades
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="grade1">Points</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter points earned">
+        <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+      </div>
+      <div class="form-group col-md-6">
+        <label for="grade1outof">Points out of: </label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Total points available">
+      </div>
       <div class="form-group col-md-6">
         <label for="grade1">Points</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter points earned">
