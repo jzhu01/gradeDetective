@@ -10,16 +10,16 @@ $(document).ready(function(){
         var grade1 = points1/pointsOutOf1;
         console.log(currCourse + " " + currAssignment + " " + grade1);
 
-        //writeUserData(currCourse, currAssignment, grade1);
+        writeUserData(currCourse, currAssignment, grade1);
     });
 });
 
 
 
 function writeUserData(currCourse, currAssignment, grade1) {
-//     firebase.database().ref().set({
-//     Course: currCourse,
-//     AssignmentType: currAssignment,
-//     Grade: grade1
-//   });
+    firebaseref.set({
+    Course: currCourse,
+    AssignmentType: currAssignment,
+    Grade: grade1
+  });
 }
