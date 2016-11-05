@@ -1,4 +1,4 @@
-body {background: #ffffff; margin: 0; padding: 0;}
+/*body {background: #ffffff; margin: 0; padding: 0;}
 a {color: #2b2bf6;
   padding: 2em;}
 #container {width: 900px; margin: 0; padding: 0; background: #dddddd;}
@@ -25,4 +25,7 @@ a {color: #2b2bf6;
 #content {text-align: center;}
 
 #footer {width: 900px; 	height: 70px; 	margin: 0; padding: 0; border: 0; float: left; background: linear-gradient(#0000AA, #990099); clear:both;}
-#footer {border-radius: 25px; padding: 10px;}
+#footer {border-radius: 25px; padding: 10px;}*/
+#header {
+  margin-top: 5%;
+}
