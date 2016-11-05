@@ -6,3 +6,16 @@ handlers:
 - url: .*
   script: main.app
   login: required
+
+- url: /resources/css
+  static_dir: css
+
+- url: /resources/javascript
+  static_dir: javascript
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest
