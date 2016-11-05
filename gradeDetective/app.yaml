@@ -7,11 +7,11 @@ handlers:
   script: main.app
   login: required
 
-- url: /css
-  static_dir: /resources/css
+- url: /resources
+  static_dir: css
 
-- url: /javascript
-  static_dir: /resources/script
+- url: /resources
+  static_dir: scripts
 
 libraries:
 - name: webapp2
