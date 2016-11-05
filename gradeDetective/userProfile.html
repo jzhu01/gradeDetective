@@ -322,6 +322,7 @@
     </div>
     <!-- Firebase Scripts -->
     <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script>
     <script>
        // Initialize Firebase
        var config = {
@@ -332,8 +333,9 @@
          messagingSenderId: "690886237455"
        };
        firebase.initializeApp(config);
-    </script>
-    <!-- End of Firebase Script -->
+       var database = firebase.database();
+     </script>
+     <!-- End of Firebase Script -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

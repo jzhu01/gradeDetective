@@ -7,10 +7,10 @@ handlers:
   script: main.app
   login: required
 
-- url: /resources/css
+- url: /css
   static_dir: css
 
-- url: /resources/javascript
+- url: /javascript
   static_dir: javascript
 
 libraries:
