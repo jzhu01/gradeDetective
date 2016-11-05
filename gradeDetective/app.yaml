@@ -8,10 +8,10 @@ handlers:
   login: required
 
 - url: /resources/css
-  static_dir: /resources/css
+  static_dir: resources/css/
 
 - url: /resources/scripts
-  static_dir: /resources/scripts
+  static_dir: resources/scripts/
 
 libraries:
 - name: webapp2
