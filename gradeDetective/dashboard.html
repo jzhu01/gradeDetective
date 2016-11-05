@@ -30,7 +30,7 @@
          <ul class="nav navbar-nav navbar-left nav-pills">
            <!-- Left-aligned items. -->
            <li class="presentation"><a href="#"><span class="glyphicon glyphicon-home"></span> <strong>Dashboard</strong> </a></li>
-           <li><a href="#"> User Profile </a></li>
+           <li><a href="/userProfile"> User Profile </a></li>
            <!--li class="presentation">
              <a href="#"><span class="glyphicon glyphicon-fire"></span>  </a>
            </li-->
@@ -98,5 +98,19 @@
     </div>
    </div>
    <div id="footer"></div>
+   <!-- Firebase Scripts -->
+   <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+   <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDYIz9QKWYBu0Rw0KPFNZCdB_BgnQ5oelY",
+        authDomain: "gradedetective.firebaseapp.com",
+        databaseURL: "https://gradedetective.firebaseio.com",
+        storageBucket: "gradedetective.appspot.com",
+        messagingSenderId: "690886237455"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- End of Firebase Script -->
 </body>
 </html>

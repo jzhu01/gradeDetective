@@ -17,8 +17,8 @@
     <div id=“nav”>
     	<ul>
 
-        <a href=“dashboard.html”>Dashboard</a> &nbsp;&nbsp;&nbsp;&nbsp;
- 	      <strong>Profile</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=“/”>Dashboard</a> &nbsp;&nbsp;&nbsp;&nbsp;
+ 	      <a href="/userProfile"><strong>Profile</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;
 
       </ul>
     </div>
@@ -320,6 +320,20 @@
         </div>
       </div>
     </div>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script>
+       // Initialize Firebase
+       var config = {
+         apiKey: "AIzaSyDYIz9QKWYBu0Rw0KPFNZCdB_BgnQ5oelY",
+         authDomain: "gradedetective.firebaseapp.com",
+         databaseURL: "https://gradedetective.firebaseio.com",
+         storageBucket: "gradedetective.appspot.com",
+         messagingSenderId: "690886237455"
+       };
+       firebase.initializeApp(config);
+    </script>
+    <!-- End of Firebase Script -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

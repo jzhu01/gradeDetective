@@ -30,14 +30,17 @@ JINJA_ENVIRONMENT = jinja2.Environment (
     autoescape = True
 )
 
-class MainHandler(webapp2.RequestHandler):
+class DashboardHandler(webapp2.RequestHandler):
     def get(self):
         main_page_content = open('dashboard.html').read()
         self.response.write(main_page_content)
 
+class UserProfileHandler(webapp2.RequestHandler):
+    def get(self):
+        main_page_content = open('userProfile.html').read()
+        self.response.write(main_page_content)
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    ('/solo_hacker_form', SoloFormHandler),
-    ('/solo_hacker_info', SoloHackerHandler),
-    ('/groupinput', GroupInputHandler),
+    ('/', DashboardHandler),
+    ('/userProfile', ProfileHandler)
 ], debug=True)
