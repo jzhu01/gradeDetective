@@ -1,5 +1,7 @@
-$(document).ready(function(){
-    $("#submit").click(function(){
+//$(document).ready(function(){
+//    $("#submit").onclick(function(){
+window.onload = function(){
+  document.getElementById("submit").onclick = function(){
         var currCourse = $("#course").val();
         var currAssignment = $("#assignment").val();
 
@@ -9,9 +11,9 @@ $(document).ready(function(){
         var grade1 = points1/pointsOutOf1;
         console.log(currCourse + " " + currAssignment + " " + grade1);
 
-        writeUserData(currCourse, currAssignment, grade1);
-    });
-});
+        //writeUserData(currCourse, currAssignment, grade1); 
+    }
+}
 
 
 function writeUserData(currCourse, currAssignment, grade1) {

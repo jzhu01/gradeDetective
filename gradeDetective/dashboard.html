@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Grade Detective | Dashboard </title>
   <link rel="stylesheet" type="text/css" href="resources/css/dashboard.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -99,7 +100,7 @@
         <input type="text" class="form-control" id="pointsOutOf1" placeholder="Total points available">
       </div>
       <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-plus"></i></button>
-      <button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+      <button type="submit" class="btn btn-primary" onclick = "main()" id="submit" >Submit</button>
      </form>
     </div>
    </div>
@@ -117,7 +118,8 @@
         messagingSenderId: "690886237455"
       };
       firebase.initializeApp(config);
-      var database = firebase.database();
+      var db = firebase.database();
+
     </script>
     <!-- End of Firebase Script -->
 </body>
